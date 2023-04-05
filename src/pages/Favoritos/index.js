@@ -9,8 +9,12 @@ import styles from './Favoritos.module.css'
 
 import videos from 'json/db.json'
 import Card from 'componentes/Card'
+import { useFavoritoContexto } from 'context/Favoritos'
 
 export default function Favoritos() {
+
+    const { favorito } = useFavoritoContexto()
+
     return (
     
         <>
@@ -20,9 +24,9 @@ export default function Favoritos() {
             </Titulo>
             <section className={styles.container}>
                 {
-                    videos.map((video) => {
+                    favorito.map((fav) => {
                         return (
-                            <Card {...video} key={video.id}/>
+                            <Card {...fav} key={fav.id}/>
                         )
                     })
                 }
