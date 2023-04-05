@@ -16,10 +16,10 @@ export default function index() {
                 /> 
             </Link>
             <nav >
-                <CabecalhoLink to='/'>
+                <CabecalhoLink url='/'>
                     Home
                 </CabecalhoLink>
-                <CabecalhoLink to='/favoritos'>
+                <CabecalhoLink url='/favoritos'>
                     favoritos
                 </CabecalhoLink>
             </nav>

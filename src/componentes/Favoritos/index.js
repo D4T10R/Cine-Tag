@@ -1,19 +1,22 @@
-import Banner from '../../componentes/Banner'
+import React from 'react'
+
+import Banner from 'componentes/Banner'
 import Titulo from 'componentes/Titulo'
-import Card from 'componentes/Card'
 
-import img from '../../componentes/Banner/banner-home.png'
+import img from './banner-favoritos.png'
 
-import styles from './Inicio.module.css'
+import styles from './Favoritos.module.css'
 
 import videos from 'json/db.json'
+import Card from 'componentes/Card'
 
-export default function Inicio() {
+export default function Favoritos() {
     return (
+    
         <>
             <Banner imagem={img} />
             <Titulo>
-                <h1>Um lugar para guardar seus vídeos e filmes</h1>
+                <h1>Meus Favoritos</h1>
             </Titulo>
             <section className={styles.container}>
                 {
@@ -25,6 +28,6 @@ export default function Inicio() {
                 }
             </section>
         </>
-        
+
     )
 }
