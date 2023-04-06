@@ -7,7 +7,6 @@ import img from './banner-favoritos.png'
 
 import styles from './Favoritos.module.css'
 
-import videos from 'json/db.json'
 import Card from 'componentes/Card'
 import { useFavoritoContexto } from 'context/Favoritos'
 
